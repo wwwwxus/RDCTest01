@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
 }
+
 .w {
     width: 1200px;
     margin: 0 auto;
 }
+
 li {
     list-style: none;
 }
@@ -14,6 +16,7 @@ a {
     text-decoration: none;
     color: #333333;
 }
+
 @font-face {
     font-family: 'icomoon';
     src: url('../fonts/icomoon.eot?sf4pa7');
@@ -25,55 +28,71 @@ a {
     font-style: normal;
     font-display: block;
 }
+
 .nav {
+
+    position: fixed;
+    z-index: 999;
     height: 45px;
-    /* background-color: pink; */
+    width: 100%;
+    background-color: #ffffff;
     line-height: 45px;
     font-size: 12px;
 }
+
 .nav .tip {
     cursor: pointer;
-    content:'';
+    content: '';
     font-family: 'icomoon';
     margin-right: 35px;
     margin-left: 20px;
 }
+
 .nav_right {
     float: right;
+    margin-right: 0;
 }
+
 .nav_right li {
     float: left;
     font-family: 'icomoon';
     margin-right: 35px;
 }
-.nav_right li:last-child a{
+
+.nav_right li:last-child a {
     display: block;
     text-align: center;
     width: 70px;
     height: 30px;
-    transform: translate(10px,9px);
+    transform: translate(10px, 9px);
     line-height: 30px;
     background-color: #3399ff;
     border-radius: 5px;
     color: aliceblue;
 }
+
 .nav_right .active {
 
     border-bottom: 3px solid #3399ff;
 }
+
 .note1 {
     height: 690px;
     /* background-color: blue; */
     padding-top: 65px;
     text-align: center;
 }
-.text1 h1 {
+
+.text1 h1,
+h3 {
     font-weight: 400;
 }
+
 .text1 p {
     padding-top: 20px;
     color: #666666;
 }
+
 .IMGS01 {
     display: flex;
     height: 550px;
@@ -81,73 +100,92 @@ a {
     justify-content: space-between;
     align-items: center;
 }
+
 .IMGS01 [class^=img] {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
     width: 290px;
     height: 465px;
+
 }
+
+.IMGS01 img {
+    height: 100%;
+}
+
 .mask {
     position: absolute;
     z-index: 99;
     text-align: center;
     padding-top: 186px;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .3);
-    color:aliceblue;
+    color: aliceblue;
 }
-.IMGS01 [class^=img]:hover img{
-    transform: scale(1.1,1.1);
+
+.IMGS01 [class^=img]:hover img {
+    transform: scale(1.1, 1.1);
 }
+
 .mask:hover {
     background: rgba(0, 0, 0, .6);
 }
+
 .mask h3 {
     font-size: 17px;
 }
+
 .mask p {
     font-size: 12px;
 }
+
 .IMGS01 [class^=img] a {
     display: block;
     position: absolute;
     width: 105px;
     height: 35px;
-    transform: translate(85px,130px);
+    transform: translate(85px, 130px);
     text-align: center;
     line-height: 35px;
     color: #ffffff;
     border: 3px solid #ffffff;
 }
+
 .nav .nav_bigbox {
     display: none;
     position: absolute;
-    top:45px;
+    top: 45px;
     left: 0;
     z-index: 999;
     width: 180px;
     background-color: #ffffff;
     border-top: 3px solid rgba(0, 0, 0, .2);
     padding-left: 15px;
-    
+
 }
+
 .nav_bigbox li {
     font-family: 'icomoon';
 }
+
 .nav_bigbox li:first-child {
     margin-top: 5px;
     border-radius: 25px 0 0 25px;
     background-color: #e7f2fb;
     overflow: hidden;
 }
+
 .nav_bigbox li:first-child a {
     color: #3399ff;
 }
-.nav_bigbox li:nth-child(5),:nth-child(8),:nth-child(14){
+
+.nav_bigbox li:nth-child(5),
+:nth-child(8),
+:nth-child(14) {
     border-bottom: 2px solid rgba(0, 0, 0, .2);
 }
 
@@ -155,6 +193,7 @@ a {
     margin: 0 auto;
     overflow: hidden;
 }
+
 .IMGS02 .text2 {
     display: block;
     text-align: center;
@@ -169,24 +208,29 @@ a {
     width: 1900px;
     height: 1200px;
     margin: 0 auto;
+    background-position: center;
     color: #ffffff;
 
 }
+
 .IMGS02 .note2 .info {
     padding-top: 1030px;
-    padding-left: 20px;    
+    padding-left: 20px;
 }
+
 .IMGS02 .note2 .info h1 {
 
     font-weight: 400;
     font-size: 35px;
 }
+
 .IMGS02 .note2 .info p {
     font-size: 23px;
 }
+
 .info a {
     display: block;
-    width:100px;
+    width: 100px;
     height: 35px;
     background-color: #3399ff;
     color: #ffffff;
@@ -196,14 +240,17 @@ a {
     text-align: center;
     margin-top: 22px;
 }
+
 .IMGS03 {
     text-align: center;
 }
-.IMGS03 h1{
+
+.IMGS03 h1 {
     margin-top: 173px;
     font-size: 60px;
 }
-.IMGS03 a{
+
+.IMGS03 a {
     display: block;
     width: 136px;
     height: 35px;
@@ -215,6 +262,7 @@ a {
     margin-top: 22px;
     margin: 0 auto;
 }
+
 .IMGS03 .yuan {
     display: flex;
     justify-content: space-between;
@@ -222,16 +270,19 @@ a {
     height: 400px;
     /* background-color: pink; */
 }
-.IMGS03 .yuan .middle1{
+
+.IMGS03 .yuan .middle1 {
     width: 262px;
     height: 262px;
     border: 6px solid #ffffff;
     border-radius: 50% 50% 50% 50%;
     overflow: hidden;
-    background: url(../image/06.jpg) no-repeat;   
-    background-size:262px 262px;
+    background: url(../image/06.jpg) no-repeat;
+    background-size: 262px 262px;
     transition: all .4s;
+    background-position: center;
 }
+
 .IMGS03 .yuan .middle2 {
     width: 262px;
     height: 262px;
@@ -240,8 +291,10 @@ a {
     overflow: hidden;
     background: url(../image/07.jpg) no-repeat;
     background-size: 262px 262px;
+    background-position: center;
 
 }
+
 .IMGS03 .yuan .middle3 {
     width: 262px;
     height: 262px;
@@ -251,44 +304,490 @@ a {
     background: url(../image/08.jpg) no-repeat;
     background-size: 262px 262px;
     transition: all .4s;
+    background-position: center;
 }
+
 .IMGS03 .yuan .big1 {
     position: relative;
     border: 17px solid #ffcccc;
     border-radius: 50% 50% 50% 50%;
 }
+
 .IMGS03 .yuan .big2 {
     position: relative;
     border: 17px solid #ff9966;
     border-radius: 50% 50% 50% 50%;
 }
+
 .IMGS03 .yuan .big3 {
     position: relative;
     border: 17px solid #ccffff;
     border-radius: 50% 50% 50% 50%;
 }
 
-.IMGS03 .yuan [class^=big] a{
+.IMGS03 .yuan [class^=big] a {
     position: absolute;
     bottom: -20px;
     left: 105px;
     display: block;
     font-size: 12px;
-    background-color:#663399;
+    background-color: #663399;
     color: #ffffff;
     height: 35px;
     width: 50px;
     border-radius: 15px;
-} 
+}
+
 .IMGS03 .yuan .big2 a {
     background-color: #3366ff;
 }
-.IMGS03 .yuan .big1:hover{
-    transform: scale(1.1,1.1);
-}
-.IMGS03 .yuan .big2:hover {
+
+.IMGS03 .yuan [class^=big]:hover {
     transform: scale(1.1, 1.1);
 }
-.IMGS03 .yuan .big3:hover {
-    transform: scale(1.1, 1.1);
+
+
+.note4 h1 {
+    display: block;
+    margin: 85px auto;
+    width: 280px;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.IMGS04 {
+    position: relative;
+    height: 450px;
+    background-color: pink;
+    color: #ffffff;
+}
+
+.IMGS05 h1 {
+    display: block;
+    width: 310px;
+    margin: 50px auto;
+    font-weight: 400;
+    font-size: 29px;
+}
+
+.IMGS05 .note5 {
+    border-radius: 10px;
+    width: 100%;
+    height: 677px;
+    overflow: hidden;
+}
+
+.IMGS05 .note5 img {
+
+    width: 100%;
+}
+
+.IMGS05 .note5 img:hover {
+    transform: scale(1.1, 1.1)
+}
+
+.IMGS05 .pick {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.IMGS05 .pick a {
+    display: inline;
+    margin-right: 10px;
+    border: #333333 2px solid;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+.note6 {
+    display: flex;
+    height: 480px;
+}
+
+.note6 .text6 {
+    flex: 1;
+    font-family: 'icomoon';
+    padding-left: 85px;
+}
+
+.note6 .text6 h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.note6 .text6 p {
+    font-size: 12px;
+    color: #666666;
+}
+
+.note6 .text6 a {
+    font-size: 12px;
+    color: #3399ff;
+}
+
+.note6 .IMGS06 {
+    position: relative;
+    flex: 1.5;
+}
+
+.note6 .IMGS06 .pic1 {
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    background: url(../image/22.jpg);
+    background-size: cover;
+    width: 310px;
+    height: 195px;
+    background-position: center;
+    overflow: hidden;
+}
+
+.note6 .IMGS06 .pic1::after {
+    display: block;
+    float: right;
+    padding: 5px 5px;
+    content: '';
+    font-family: 'icomoon';
+    color: #ffffff;
+}
+
+.note6 .IMGS06 .pic2 {
+    position: absolute;
+    top: 235px;
+    right: 28px;
+    width: 170px;
+    height: 110px;
+    background: url(../image/22.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+.note6 .IMGS06 .pic3 {
+    position: absolute;
+    top: 235px;
+    right: 220px;
+    width: 145px;
+    height: 130px;
+    background: url(../image/22.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+.note6 .IMGS06 .pic4 {
+    position: absolute;
+    top: 25px;
+    right: 400px;
+    width: 210px;
+    height: 315px;
+    background: url(../image/22.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+.note7 h1 {
+    display: block;
+    width: 455px;
+    margin: 50px auto;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.note7 .IMGS07 {
+    position: relative;
+    height: 530px;
+    /* background-color: pink; */
+}
+
+.note7 .IMGS07 .img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 425px;
+    height: 70px;
+    background: url(../image/19.jpg) no-repeat;
+    padding-top: 460px;
+    padding-left: 15px;
+
+}
+
+.note7 .IMGS07 .img2 {
+    position: absolute;
+    top: 0;
+    left: 450px;
+    width: 440px;
+    height: 40px;
+    background: url(../image/20.jpg) no-repeat;
+    padding-top: 215px;
+    padding-left: 15px;
+}
+
+.note7 .IMGS07 .img3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 265px;
+    height: 50px;
+    background: url(../image/21.jpg) no-repeat;
+    padding-top: 205px;
+    padding-left: 15px;
+}
+
+.note7 .IMGS07 .img4 {
+    position: absolute;
+    bottom: 0;
+    left: 450px;
+
+    width: 265px;
+    height: 50px;
+    background: url(../image/22.jpg) no-repeat;
+    padding-top: 205px;
+    padding-left: 15px;
+
+}
+
+.note7 .IMGS07 .img5 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 440px;
+    height: 40px;
+    background: url(../image/23.jpg) no-repeat;
+    padding-top: 215px;
+    padding-left: 15px;
+
+
+}
+
+.note7 .IMGS07 [class^=img] p {
+    font-size: 12px;
+}
+
+.note7 .IMGS07 [class^=img] {
+    color: #ffffff;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    /* overflow: hidden; */
+
+}
+
+.note7 .IMGS07 [class^=img]:hover {
+    background-size: 110%;
+
+}
+
+.note8 {
+    position: relative;
+    display: flex;
+    margin: 75px auto;
+    border-radius: 10px;
+    height: 110px;
+    overflow: hidden;
+}
+
+.note8 .IMGS08 {
+    flex: 1;
+
+}
+
+.note8 .IMGS08 img {
+    width: 100%;
+}
+
+.note8 .IMGS08 .mask2 {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 325px;
+    height: 100%;
+    background-color: rgba(51, 153, 255, .8);
+}
+
+.note8 .text8 {
+    flex: 2.5;
+    background-color: #3366ff;
+    color: #ffffff;
+    font-size: 23px;
+    padding-left: 65px;
+    padding-top: 30px;
+}
+
+.note8 .text8 p {
+    font-size: 12px;
+}
+
+.note11 {
+    text-align: center;
+
+
+}
+
+.note11 h1 {
+    display: inline-block;
+    margin: 30px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.note11 .IMGS11 {
+    position: relative;
+    height: 645px;
+    overflow: hidden;
+    color: #ffffff;
+
+}
+
+.note11 .IMGS11 h2 {
+    display: inline-block;
+    margin: 60px 0 490px 0;
+    font-weight: 400;
+}
+
+.note11 .mask3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.note11 .img {
+    width: 100%;
+    height: 100%;
+    background: url(../image/33.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 -150px;
+}
+
+.note11 a {
+    display: block;
+    height: 37px;
+    width: 170px;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 37px;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: #3366ff;
+    color: #ffffff;
+}
+
+.note12 h1 {
+    display: block;
+    width: 400px;
+    text-align: center;
+    margin: 30px auto;
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.note12 .IMGS12 {
+    display: flex;
+    height: 175px;
+    /* background-color: pink; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note12 .IMGS12 [class^=img] {
+    position: relative;
+    width: 290px;
+    height: 175px;
+    border-radius: 5px;
+    /* background-color: #ccffff; */
+}
+
+.note12 .IMGS12 .img1 {
+    background: url(../image/34.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note12 .IMGS12 .img2 {
+    background: url(../image/35.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note12 .IMGS12 .img3 {
+    background: url(../image/36.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note12 .IMGS12 .img4 {
+    background: url(../image/37.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note12 a {
+    display: block;
+    height: 37px;
+    width: 150px;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 37px;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: #3366ff;
+    color: #ffffff;
+}
+
+.note12 .IMGS12 [class^=img] .pic {
+    /* position: relative; */
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    border-radius: 5px 5px 0 0;
+    width: 210px;
+    height: 30px;
+    background-color: #ffffff;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 70px;
+    color: #666666;
+}
+
+.note12 .IMGS12 [class^=img] .pic [class^=logo] {
+    position: absolute;
+    z-index: 9;
+    top: 25px;
+    right: 55px;
+    width: 100px;
+    height: 20px;
+
+    /* background-color: #3399ff; */
+}
+
+.note12 .IMGS12 .logo1 {
+    background: url(../image/unnamed9.jpg) no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.note12 .IMGS12 .logo2 {
+    background: url(../image/unnamed10.png) no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.note12 .IMGS12 .logo3 {
+    background: url(../image/unnamed11.jpg) no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.note12 .IMGS12 .logo4 {
+    background: url(../image/unnamed11.jpg) no-repeat;
+    background-size: 50%;
+    background-position: center;
 }

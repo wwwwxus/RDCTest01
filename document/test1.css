@@ -184,8 +184,8 @@ h3 {
 }
 
 .nav_bigbox li:nth-child(5),
-:nth-child(8),
-:nth-child(14) {
+.nav_bigbox li:nth-child(8),
+.nav_bigbox li:nth-child(13) {
     border-bottom: 2px solid rgba(0, 0, 0, .2);
 }
 
@@ -649,7 +649,7 @@ h3 {
     font-weight: 400;
 }
 
-.note11 .mask3 {
+.mask3 {
     position: absolute;
     top: 0;
     left: 0;
@@ -664,6 +664,17 @@ h3 {
     background: url(../image/33.jpg) no-repeat;
     background-size: cover;
     background-position: 0 -150px;
+}
+
+.note11 .mask3::after {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    content: '';
+    font-family: 'icomoon';
+    color: #ffffff;
+
 }
 
 .note11 a {
@@ -790,4 +801,288 @@ h3 {
     background: url(../image/unnamed11.jpg) no-repeat;
     background-size: 50%;
     background-position: center;
+}
+
+.note15 .IMGS15 {
+    position: relative;
+    height: 320px;
+    background: url(../image/50.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.note15 .IMGS15 h1 {
+    padding-top: 90px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.note15 .IMGS15 a {
+    display: block;
+    width: 80px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    margin: 50px auto;
+}
+
+.text16 {
+    text-align: center;
+}
+
+.text16 h1 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 50px auto;
+}
+
+.text16 a {
+
+    display: inline;
+    margin-top: 15px;
+    margin-right: 10px;
+    border: #333333 2px solid;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+.note17 h1 {
+    display: block;
+    width: 400px;
+    text-align: center;
+    margin: 30px auto;
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.note17 .IMGS17 {
+    display: flex;
+    height: 285px;
+    /* background-color: pink; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note17 .IMGS17 .img {
+    position: relative;
+    width: 295px;
+    height: 285px;
+    /* background-color: #3399ff; */
+
+}
+
+.note17 .IMGS17 .img [class^=pic] {
+
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.note17 .IMGS17 .img::after {
+    position: absolute;
+    /* display: block; */
+    top: 180px;
+    right: 10px;
+    content: '';
+    font-family: 'icomoon';
+    color: #333333;
+}
+
+.note17 .IMGS17 .img .pic1 {
+    background: url(../image/51.jpg) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.note17 .IMGS17 .img .pic2 {
+    background: url(../image/52.jpg) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.note17 .IMGS17 .img .pic3 {
+    background: url(../image/53.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 -70px;
+}
+
+.note17 .IMGS17 .img .pic4 {
+    background: url(../image/54.jpg) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.note17 .IMGS17 .img p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.note17 .IMGS17 .img {
+    font-size: 15px;
+}
+
+.note24 {
+    display: flex;
+    height: 345px;
+    margin: 100px auto;
+}
+
+.note24 .text24 {
+    flex: 1;
+    /* background-color: #3399ff; */
+}
+
+.note24 .img {
+    width: 345px;
+    /* background-color: #3366ff; */
+    background: url(../image/72.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 5px;
+}
+
+.note24 .text24 h1 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 55px;
+}
+
+.note24 .text24 .box .logo {
+    float: left;
+    width: 150px;
+    height: 130px;
+    background: url(../image/unnamed9.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.note24 .text24 .box {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+.note25 {
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.note25 h1 {
+    display: inline-block;
+    margin: 30px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.note25 .IMGS25 {
+    position: relative;
+    height: 645px;
+    overflow: hidden;
+    color: #ffffff;
+
+}
+
+.note25 .IMGS25 h2 {
+    display: inline-block;
+    margin: 60px 0 490px 0;
+    font-weight: 400;
+}
+
+
+.note25 .img {
+    width: 100%;
+    height: 100%;
+    background: url(../image/73.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 -450px;
+}
+
+.note25 .mask3::after {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    content: '';
+    font-family: 'icomoon';
+    color: #ffffff;
+}
+
+.note25 a {
+    display: block;
+    height: 37px;
+    width: 170px;
+    text-align: center;
+    margin: 50px auto;
+    line-height: 37px;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 2px solid #333333;
+}
+
+.note26 .IMGS26 {
+    position: relative;
+    height: 320px;
+    background: url(../image/80.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.note26 .IMGS26 h1 {
+    padding-top: 90px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.note26 .IMGS26 a {
+    display: block;
+    width: 230px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    margin: 50px auto;
+}
+
+.note24 a {
+    display: block;
+    height: 37px;
+    width: 150px;
+    text-align: center;
+    margin: 30px 200px;
+    line-height: 37px;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: #3366ff;
+    color: #ffffff;
 }

@@ -20,3 +20,16 @@ for (let i = 0; i < rightnav.length; i++) {
         }
     })
 }
+const color = document.querySelectorAll('.note10 .color div')
+for (let i = 0; i < color.length; i++) {
+    color[i].addEventListener('mouseenter', function (e) {
+
+        if (e.target.tagName === 'DIV') {
+
+            document.querySelector('.color .active').classList.remove('active')
+
+            color[i].classList.add('active')
+
+        }
+    })
+}

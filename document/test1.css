@@ -1080,7 +1080,97 @@ h3 {
     background-size: 110%;
 }
 
+.note14 h1 {
+    display: block;
+    width: 455px;
+    margin: 50px auto;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
 
+.note14 p {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    font-size: 15px;
+    color: #666666;
+}
+.note14 .IMGS14 {
+    position: relative;
+    height: 520px;
+    margin-bottom: 100px;
+    /* background-color: pink; */
+}
+.note14 .IMGS14 [class^=img] {
+    border-radius: 5px;
+    color: #ffffff;
+}
+.note14 .IMGS14 [class^=img] p {
+    color: #ffffff;
+    text-align: left;
+    font-size: 12px;
+}
+.note14 .IMGS14 [class^=img]:hover {
+    background-size: 120%;
+}
+.note14 .IMGS14 .img1:hover,.note14 .IMGS14 .img2:hover {
+    background-size: 150%;
+}
+.note14 .IMGS14 .img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 465px;
+    height: 60px;
+    background: url(../image/46.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 460px;
+    padding-left: 15px;
+
+}
+
+.note14 .IMGS14 .img2 {
+    position: absolute;
+    top: 0;
+    left: 495px;
+    width: 260px;
+    height: 60px;
+    background: url(../image/47.jpg) no-repeat;
+        background-size: cover;
+            background-position: center;
+    padding-top: 460px;
+    padding-left: 15px;
+}
+
+.note14 .IMGS14 .img3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 55px;
+    background: url(../image/48.jpg) no-repeat;
+        background-size: cover;
+            background-position: center;
+    padding-top: 200px;
+    padding-left: 15px;
+}
+
+.note14 .IMGS14 .img4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 55px;
+    background: url(../image/49.jpg) no-repeat;
+        background-size: cover;
+            background-position: center;
+    padding-top: 200px;
+    padding-left: 15px;
+
+}
 
 
 
@@ -1119,6 +1209,7 @@ h3 {
 
 .text16 {
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .text16 h1 {
@@ -1377,6 +1468,9 @@ h3 {
     margin: 50px auto;
 }
 
+.note27 {
+    position: relative;
+}
 .note27 h1 {
     display: block;
     width: 400px;
@@ -1397,13 +1491,49 @@ h3 {
     color: #666666;
 }
 
+.note27 .tip1 {
+    position: absolute;
+    z-index: 999;
+    top: 220px;
+    right: -15px;
+    font-family: 'icomoon';
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 33px;
+    color: #3399ff;
+    display: block;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.note27 .tip2 {
+    position: absolute;
+    display: block;
+    z-index: 999;
+    top: 220px;
+    left: -15px;
+    font-family: 'icomoon';
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 33px;
+    color: #3399ff;
+    
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
 .note27 .Bigbox {
 
     height: 230px;
     /* width: 3000px; */
     margin-bottom: 100px;
-    background-color: pink;
-    /* overflow: hidden; */
+    /* background-color: pink; */
+    overflow: hidden;
 }
 
 .note27 .Bigbox .IMGS27 {
@@ -1411,7 +1541,7 @@ h3 {
     height: 100%;
     /* width: 3185px; */
     width: 2400px;
-    background-color: #ccffff;
+    /* background-color: #ccffff; */
     transition: all 1s;
 }
 
@@ -1425,6 +1555,15 @@ h3 {
     border-radius: 5px;
 }
 
+.note27 .Bigbox .IMGS27 [class^=img]:hover {
+    background-size: 130%;
+}
+.note27 .Bigbox .IMGS27 .img3:hover,.note27 .Bigbox .IMGS27 .img4:hover{
+    background-size: 110%;
+}
+.note27 .Bigbox .IMGS27 .img2:hover {
+    background-size: 170%;
+}
 .note27 .Bigbox .IMGS27 .img10 {
     margin-right: 0;
 }
@@ -1504,4 +1643,186 @@ h3 {
     color: #ffffff;
     text-align: center;
     line-height: 35px;
+}
+.note28 {
+    position: relative;
+    height: 690px;
+    /* background-color: blue; */
+    padding-top: 65px;
+    text-align: center;
+}
+
+.text28 h1,
+h3 {
+    font-weight: 400;
+}
+
+.text28 p {
+    padding-top: 20px;
+    color: #666666;
+}
+
+.IMGS28 {
+    display: flex;
+    margin-top: 50px;
+    height: 465px;
+    width: 2400px;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s;
+}
+
+.IMGS28 [class^=img] {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 290px;
+    height: 465px;
+
+}
+
+.IMGS28 img {
+    height: 100%;
+}
+
+.IMGS28 [class^=img]:hover img {
+    transform: scale(1.1, 1.1);
+}
+
+.IMGS28 [class^=img] a {
+    display: block;
+    position: absolute;
+    width: 105px;
+    height: 35px;
+    transform: translate(85px, 130px);
+    text-align: center;
+    line-height: 35px;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+}
+.note28 .tip1 {
+    position: absolute;
+    z-index: 999;
+    top: 400px;
+    right: -15px;
+    font-family: 'icomoon';
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 33px;
+    color: #3399ff;
+    display: block;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.note28 .tip2 {
+    position: absolute;
+    display: block;
+    z-index: 999;
+    top: 400px;
+    left: -15px;
+    font-family: 'icomoon';
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 33px;
+    color: #3399ff;
+
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+.note28 .Bigbox {
+    height: 465px;
+    overflow: hidden;
+}
+.note20 h1 {
+    display: block;
+    width: 455px;
+    margin: 50px auto;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.note20 p {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    font-size: 15px;
+    color: #666666;
+}
+
+.note20 .IMGS20 {
+    position: relative;
+    height: 520px;
+    margin-bottom: 100px;
+    /* background-color: pink; */
+}
+
+.note20 .IMGS20 [class^=img] {
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.note20 .IMGS20 [class^=img] p {
+    color: #ffffff;
+    text-align: left;
+    font-size: 12px;
+}
+
+.note20 .IMGS20 [class^=img]:hover {
+    background-size: 120%;
+}
+
+/* .note14 .IMGS14 .img1:hover,
+.note14 .IMGS14 .img2:hover {
+    background-size: 150%;
+} */
+
+.note20 .IMGS20 .img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 55px;
+    background: url(../image/64.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    padding-left: 15px;
+
+}
+
+.note20 .IMGS20 .img2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 450px;
+    height: 55px;
+    background: url(../image/65.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    padding-left: 15px;
+}
+
+.note20 .IMGS20 .img3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 700px;
+    height: 50px;
+    background: url(../image/66.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 470px;
+    padding-left: 15px;
 }

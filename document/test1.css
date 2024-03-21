@@ -938,31 +938,31 @@ h3 {
     height: 315px;
     /* width: 3000px; */
     margin-bottom: 100px;
-    background-color: pink;
+    /* background-color: pink; */
     overflow: hidden;
 }
 
 .note13 .Bigbox .IMGS13 {
     display: flex;
     height: 100%;
-    width: 3225px;
-    background-color: #ccffff;
+    /* width: 3185px; */
+    width: 3200px;
+    /* background-color: #ccffff; */
     transition: all 1s;
 }
 
 .note13 .Bigbox .IMGS13 .img {
-    width: 390px;
+    position: relative;
+    /* width: 390px; */
+    width: 393px;
     margin-right: 10px;
-    background-color: #666666;
+    /* background-color: #666666; */
 }
 
-.note13 .Bigbox .IMGS13 .img:last-child {
+.note13 .Bigbox .IMGS13 .img8 {
     margin-right: 0;
 }
 
-.note13 .Bigbox .IMGS13 .img:first-child {
-    width: 285px;
-}
 
 /* .note13 .Bigbox .IMGS13:hover {
     transform: translate(-1000px, 0px);
@@ -970,6 +970,7 @@ h3 {
 
 .note13 .tip1 {
     position: absolute;
+    z-index: 999;
     top: 220px;
     right: -15px;
     font-family: 'icomoon';
@@ -987,6 +988,8 @@ h3 {
 
 .note13 .tip2 {
     position: absolute;
+    display: none;
+    z-index: 999;
     top: 220px;
     left: -15px;
     font-family: 'icomoon';
@@ -1002,18 +1005,80 @@ h3 {
     cursor: pointer;
 }
 
-.note13 .Bigbox .IMGS13 .img [class^=pic] {
+.note13 .Bigbox .IMGS13 [class^=pic] {
     width: 100%;
     height: 220px;
-    background-color: #ff9966;
     border-radius: 5px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
+.note13 .Bigbox .IMGS13 .pic1 {
+    background: url(../image/38.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.note13 .Bigbox .IMGS13 .pic2 {
+    background: url(../image/39.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.note13 .Bigbox .IMGS13 .pic3 {
+    background: url(../image/40.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.note13 .Bigbox .IMGS13 .pic4 {
+    background: url(../image/41.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.note13 .Bigbox .IMGS13 .pic5 {
+    background: url(../image/42.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note13 .Bigbox .IMGS13 .pic6 {
+    background: url(../image/43.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note13 .Bigbox .IMGS13 .pic7 {
+    background: url(../image/44.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note13 .Bigbox .IMGS13 .pic8 {
+    background: url(../image/45.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note13 .IMGS13 .img::after {
+    position: absolute;
+    /* display: block; */
+    top: 240px;
+    right: 10px;
+    content: '';
+    font-family: 'icomoon';
+    color: #333333;
+}
+
+.note13 .IMGS13 .img p {
+    text-align: left;
+    font-size: 12px;
+}
+
+.note13 .Bigbox .IMGS13 [class^=pic]:hover {
+    background-size: 110%;
+}
 
 
 
@@ -1204,7 +1269,18 @@ h3 {
     margin-left: 10px;
 }
 
-
+.note24 a {
+    display: block;
+    height: 37px;
+    width: 150px;
+    text-align: center;
+    margin: 30px 200px;
+    line-height: 37px;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: #3366ff;
+    color: #ffffff;
+}
 
 
 
@@ -1301,15 +1377,131 @@ h3 {
     margin: 50px auto;
 }
 
-.note24 a {
+.note27 h1 {
     display: block;
-    height: 37px;
-    width: 150px;
+    width: 400px;
     text-align: center;
-    margin: 30px 200px;
-    line-height: 37px;
-    padding: 0 10px;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+.note27 p {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    font-size: 15px;
+    color: #666666;
+}
+
+.note27 .Bigbox {
+
+    height: 230px;
+    /* width: 3000px; */
+    margin-bottom: 100px;
+    background-color: pink;
+    /* overflow: hidden; */
+}
+
+.note27 .Bigbox .IMGS27 {
+    display: flex;
+    height: 100%;
+    /* width: 3185px; */
+    width: 2400px;
+    background-color: #ccffff;
+    transition: all 1s;
+}
+
+.note27 .Bigbox .IMGS27 [class^=img] {
+    position: relative;
+    flex: 1;
+    width: 230px;
+    height: 230px;
+    margin-right: 10px;
+    background-color: #666666;
     border-radius: 5px;
-    background-color: #3366ff;
+}
+
+.note27 .Bigbox .IMGS27 .img10 {
+    margin-right: 0;
+}
+
+.note27 .Bigbox .IMGS27 .img1 {
+    background: url(../image/74.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note27 .Bigbox .IMGS27 .img2 {
+    background: url(../image/75.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note27 .Bigbox .IMGS27 .img3 {
+    background: url(../image/76.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note27 .Bigbox .IMGS27 .img4 {
+    background: url(../image/77.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note27 .Bigbox .IMGS27 .img5 {
+    background: url(../image/79.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note27 .Bigbox .IMGS27 .img6 {
+    background: url(../image/79.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note27 .Bigbox .IMGS27 .img7 {
+    background: url(../image/79.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note27 .Bigbox .IMGS27 .img8 {
+    background: url(../image/79.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note27 .Bigbox .IMGS27 .img9 {
+    background: url(../image/79.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note27 .Bigbox .IMGS27 .img10 {
+    background: url(../image/79.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.note27 .Bigbox .IMGS27 [class^=img]::before {
+    font-family: 'icomoon';
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #ffffff;
+    text-align: center;
+    line-height: 35px;
 }

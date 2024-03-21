@@ -33,3 +33,42 @@ for (let i = 0; i < color.length; i++) {
         }
     })
 }
+const right = document.querySelector('.note13 .tip1')
+const left = document.querySelector('.note13 .tip2')
+const imgs = document.querySelector('.note13 .Bigbox .IMGS13')
+let i = 0
+// console.log(i);
+left.style.display = 'none'
+function render(){
+    if(i === 0){
+        imgs.style.transform = 'translate(0px, 0px)'
+        left.style.display = 'none'
+        right.style.display = 'block'
+    }
+    if(i === 1){
+        imgs.style.transform = 'translate(-700px, 0px)'
+        left.style.display = 'block'
+        right.style.display = 'block'
+    }
+    if(i === 2){
+        imgs.style.transform = 'translate(-1400px, 0px)'
+        left.style.display = 'block'
+        right.style.display = 'block'
+    }
+    if(i === 3){
+        imgs.style.transform = 'translate(-2000px, 0px)'
+        right.style.display = 'none'
+        left.style.display = 'block'
+    }
+}
+right.addEventListener('click',function(){
+    i++
+    // console.log(i)
+    render()
+})
+left.addEventListener('click', function () {
+    i--
+    // console.log(i)
+    render()
+})
+

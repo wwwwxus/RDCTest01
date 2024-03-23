@@ -1,11 +1,7 @@
+/* 通用 */
 * {
     padding: 0;
     margin: 0;
-}
-
-.w {
-    width: 1200px;
-    margin: 0 auto;
 }
 
 li {
@@ -17,6 +13,13 @@ a {
     color: #333333;
 }
 
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 字体声明 */
 @font-face {
     font-family: 'icomoon';
     src: url('../fonts/icomoon.eot?sf4pa7');
@@ -29,26 +32,41 @@ a {
     font-display: block;
 }
 
+/* 导航栏模块 */
 .nav {
-
+    /* 固定定位 */
     position: fixed;
     z-index: 999;
     height: 45px;
+    /* 相对于可视窗口 */
     width: 100%;
     background-color: #ffffff;
     line-height: 45px;
     font-size: 12px;
 }
 
+/* 导航栏指引 */
 .nav .tip {
+    float: left;
     cursor: pointer;
-    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
     font-family: 'icomoon';
+    line-height: 20px;
+    margin-top: 15px;
     margin-right: 35px;
     margin-left: 20px;
 }
 
+.nav .tip:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* 右侧导航栏模块 */
 .nav_right {
+    /* 浮动 */
     float: right;
     margin-right: 0;
 }
@@ -59,11 +77,14 @@ a {
     margin-right: 35px;
 }
 
+/* 登录按钮 */
 .nav_right li:last-child a {
+    /* 块级元素 */
     display: block;
     text-align: center;
     width: 70px;
     height: 30px;
+    /* 移动 */
     transform: translate(10px, 9px);
     line-height: 30px;
     background-color: #3399ff;
@@ -72,10 +93,11 @@ a {
 }
 
 .nav_right .active {
-
+    /* 配合js使用 */
     border-bottom: 3px solid #3399ff;
 }
 
+/* 图库1 总体 */
 .note1 {
     height: 690px;
     /* background-color: blue; */
@@ -83,6 +105,7 @@ a {
     text-align: center;
 }
 
+/* 图库1 文本 */
 .text1 h1,
 h3 {
     font-weight: 400;
@@ -93,46 +116,44 @@ h3 {
     color: #666666;
 }
 
+/* 图库1 主体 */
 .IMGS01 {
+    /* flex布局 */
     display: flex;
     height: 550px;
     /* background-color: aqua; */
+    /* flex布局属性 */
     justify-content: space-between;
     align-items: center;
 }
 
+/* 图库1 图片布局 */
 .IMGS01 [class^=img] {
+    /* 遮罩层定位需要子绝父相 */
     position: relative;
-    border-radius: 5px;
-    overflow: hidden;
     width: 290px;
     height: 465px;
-
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .IMGS01 img {
     height: 100%;
 }
 
+/* 遮罩层 */
 .mask {
     position: absolute;
+    /* 重要:遮罩层需要在上层 */
     z-index: 99;
-    text-align: center;
-    padding-top: 186px;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    text-align: center;
+    padding-top: 186px;
     background: rgba(0, 0, 0, .3);
     color: aliceblue;
-}
-
-.IMGS01 [class^=img]:hover img {
-    transform: scale(1.1, 1.1);
-}
-
-.mask:hover {
-    background: rgba(0, 0, 0, .6);
 }
 
 .mask h3 {
@@ -143,11 +164,24 @@ h3 {
     font-size: 12px;
 }
 
+/* 以图片中心缩放 */
+.IMGS01 [class^=img]:hover img {
+    transform: scale(1.1, 1.1);
+}
+
+/* 遮罩层颜色变化 */
+.mask:hover {
+    background: rgba(0, 0, 0, .6);
+}
+
+/* 图库1点击链接 */
 .IMGS01 [class^=img] a {
+    /* 转成块级元素 */
     display: block;
     position: absolute;
     width: 105px;
     height: 35px;
+    /* 移动 */
     transform: translate(85px, 130px);
     text-align: center;
     line-height: 35px;
@@ -155,6 +189,7 @@ h3 {
     border: 3px solid #ffffff;
 }
 
+/* 侧边栏 */
 .nav .nav_bigbox {
     display: none;
     position: absolute;
@@ -189,11 +224,13 @@ h3 {
     border-bottom: 2px solid rgba(0, 0, 0, .2);
 }
 
+/* 图库2 总体 */
 .IMGS02 {
     margin: 0 auto;
     overflow: hidden;
 }
 
+/* 图库2 文本 */
 .IMGS02 .text2 {
     display: block;
     text-align: center;
@@ -202,6 +239,7 @@ h3 {
     margin: 35px auto;
 }
 
+/* 图库2 图片框 */
 .IMGS02 .note2 {
     background: url(../image/05.jpg) no-repeat;
     background-size: cover;
@@ -213,6 +251,7 @@ h3 {
 
 }
 
+/* 图库2 内部文本 */
 .IMGS02 .note2 .info {
     padding-top: 1030px;
     padding-left: 20px;
@@ -228,6 +267,7 @@ h3 {
     font-size: 23px;
 }
 
+/* 图库2 内部链接 */
 .info a {
     display: block;
     width: 100px;
@@ -241,6 +281,7 @@ h3 {
     margin-top: 22px;
 }
 
+/* 图库3 文字居中 */
 .IMGS03 {
     text-align: center;
 }
@@ -250,6 +291,7 @@ h3 {
     font-size: 60px;
 }
 
+/* 图库3 链接 */
 .IMGS03 a {
     display: block;
     width: 136px;
@@ -263,6 +305,7 @@ h3 {
     margin: 0 auto;
 }
 
+/* 图片外边框 */
 .IMGS03 .yuan {
     display: flex;
     justify-content: space-between;
@@ -271,6 +314,7 @@ h3 {
     /* background-color: pink; */
 }
 
+/* 图片中边框 */
 .IMGS03 .yuan .middle1 {
     width: 262px;
     height: 262px;
@@ -1097,27 +1141,34 @@ h3 {
     font-size: 15px;
     color: #666666;
 }
+
 .note14 .IMGS14 {
     position: relative;
     height: 520px;
     margin-bottom: 100px;
     /* background-color: pink; */
 }
+
 .note14 .IMGS14 [class^=img] {
     border-radius: 5px;
     color: #ffffff;
 }
+
 .note14 .IMGS14 [class^=img] p {
     color: #ffffff;
     text-align: left;
     font-size: 12px;
 }
+
 .note14 .IMGS14 [class^=img]:hover {
     background-size: 120%;
 }
-.note14 .IMGS14 .img1:hover,.note14 .IMGS14 .img2:hover {
+
+.note14 .IMGS14 .img1:hover,
+.note14 .IMGS14 .img2:hover {
     background-size: 150%;
 }
+
 .note14 .IMGS14 .img1 {
     position: absolute;
     top: 0;
@@ -1139,8 +1190,8 @@ h3 {
     width: 260px;
     height: 60px;
     background: url(../image/47.jpg) no-repeat;
-        background-size: cover;
-            background-position: center;
+    background-size: cover;
+    background-position: center;
     padding-top: 460px;
     padding-left: 15px;
 }
@@ -1152,8 +1203,8 @@ h3 {
     width: 400px;
     height: 55px;
     background: url(../image/48.jpg) no-repeat;
-        background-size: cover;
-            background-position: center;
+    background-size: cover;
+    background-position: center;
     padding-top: 200px;
     padding-left: 15px;
 }
@@ -1165,8 +1216,8 @@ h3 {
     width: 400px;
     height: 55px;
     background: url(../image/49.jpg) no-repeat;
-        background-size: cover;
-            background-position: center;
+    background-size: cover;
+    background-position: center;
     padding-top: 200px;
     padding-left: 15px;
 
@@ -1373,12 +1424,6 @@ h3 {
     color: #ffffff;
 }
 
-
-
-
-
-
-
 .note25 {
     text-align: center;
     border-radius: 5px;
@@ -1471,6 +1516,7 @@ h3 {
 .note27 {
     position: relative;
 }
+
 .note27 h1 {
     display: block;
     width: 400px;
@@ -1523,10 +1569,11 @@ h3 {
     text-align: center;
     line-height: 33px;
     color: #3399ff;
-    
+
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .3);
     cursor: pointer;
 }
+
 .note27 .Bigbox {
 
     height: 230px;
@@ -1558,12 +1605,16 @@ h3 {
 .note27 .Bigbox .IMGS27 [class^=img]:hover {
     background-size: 130%;
 }
-.note27 .Bigbox .IMGS27 .img3:hover,.note27 .Bigbox .IMGS27 .img4:hover{
+
+.note27 .Bigbox .IMGS27 .img3:hover,
+.note27 .Bigbox .IMGS27 .img4:hover {
     background-size: 110%;
 }
+
 .note27 .Bigbox .IMGS27 .img2:hover {
     background-size: 170%;
 }
+
 .note27 .Bigbox .IMGS27 .img10 {
     margin-right: 0;
 }
@@ -1644,6 +1695,7 @@ h3 {
     text-align: center;
     line-height: 35px;
 }
+
 .note28 {
     position: relative;
     height: 690px;
@@ -1701,6 +1753,7 @@ h3 {
     color: #ffffff;
     border: 3px solid #ffffff;
 }
+
 .note28 .tip1 {
     position: absolute;
     z-index: 999;
@@ -1737,10 +1790,12 @@ h3 {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .3);
     cursor: pointer;
 }
+
 .note28 .Bigbox {
     height: 465px;
     overflow: hidden;
 }
+
 .note20 h1 {
     display: block;
     width: 455px;

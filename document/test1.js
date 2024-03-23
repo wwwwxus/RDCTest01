@@ -1,11 +1,17 @@
 const tip = document.querySelector('.nav .tip')
 const bigbox = document.querySelector('.nav .nav_bigbox')
+//nav栏左侧导航栏
+bigbox.style.display === 'none'
 tip.addEventListener('click', function () {
-    if (bigbox.style.display === 'none')
+    // console.log(11);
+    // console.log(bigbox.style.display)
+    //为什么可能为空?
+    if (bigbox.style.display === 'none' || bigbox.style.display === '')
         bigbox.style.display = 'block'
     else
         bigbox.style.display = 'none'
 })
+//右侧蓝条移动
 const rightnav = document.querySelectorAll('.nav_right li')
 // console.log(rightnav)
 for (let i = 0; i < rightnav.length; i++) {
@@ -20,10 +26,12 @@ for (let i = 0; i < rightnav.length; i++) {
         }
     })
 }
+
+// 颜色条变化
 const color = document.querySelectorAll('.note10 .color div')
 for (let i = 0; i < color.length; i++) {
     color[i].addEventListener('mouseenter', function (e) {
-
+        //排他思想
         if (e.target.tagName === 'DIV') {
 
             document.querySelector('.color .active').classList.remove('active')
@@ -33,6 +41,8 @@ for (let i = 0; i < color.length; i++) {
         }
     })
 }
+
+//轮播图效果
 const note13right = document.querySelector('.note13 .tip1')
 const note13left = document.querySelector('.note13 .tip2')
 const note13imgs = document.querySelector('.note13 .Bigbox .IMGS13')
@@ -40,6 +50,7 @@ let i = 0
 // console.log(i);
 note13left.style.display = 'none'
 function note13render(){
+    //移动大图库
     if(i === 0){
         note13imgs.style.transform = 'translate(0px, 0px)'
         note13left.style.display = 'none'

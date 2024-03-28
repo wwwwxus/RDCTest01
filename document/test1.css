@@ -42,20 +42,20 @@ a {
     width: 100%;
     background-color: #ffffff;
     line-height: 45px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 /* 导航栏指引 */
 .nav .tip {
     float: left;
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     text-align: center;
     font-family: 'icomoon';
-    line-height: 20px;
-    margin-top: 15px;
+    line-height: 30px;
+    margin-top: 10px;
     margin-right: 35px;
     margin-left: 20px;
 }
@@ -139,6 +139,7 @@ h3 {
 
 .IMGS01 img {
     height: 100%;
+    transition: all .7s;
 }
 
 /* 遮罩层 */
@@ -196,11 +197,12 @@ h3 {
     top: 45px;
     left: 0;
     z-index: 999;
-    width: 180px;
+    width: 200px;
+    height: 10000px;
     background-color: #ffffff;
     border-top: 3px solid rgba(0, 0, 0, .2);
     padding-left: 15px;
-
+    /* overflow:scroll; */
 }
 
 .nav_bigbox li {
@@ -209,7 +211,7 @@ h3 {
 
 .nav_bigbox li:first-child {
     margin-top: 5px;
-    border-radius: 25px 0 0 25px;
+    border-radius: 25px 0px 0px 25px;
     background-color: #e7f2fb;
     overflow: hidden;
 }
@@ -386,6 +388,11 @@ h3 {
     background-color: #3366ff;
 }
 
+.IMGS03 .yuan [class^=big] {
+    transition: all .5s;
+}
+
+
 .IMGS03 .yuan [class^=big]:hover {
     transform: scale(1.1, 1.1);
 }
@@ -406,6 +413,102 @@ h3 {
     color: #ffffff;
 }
 
+.IMGS04 .img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 100%;
+    z-index: 2;
+    background: url(../image/09.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all .5s;
+    /* transform: scale(0.6, 0.6); */
+}
+
+.IMGS04 .img2 {
+    position: absolute;
+    top: 0;
+    left: 240px;
+    width: 270px;
+    height: 100%;
+    z-index: 3;
+    background: url(../image/10.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all .5s;
+    /* transform: scale(0.7, 0.7); */
+}
+
+.IMGS04 .img3 {
+    position: absolute;
+    top: 0;
+    left: 480px;
+    width: 270px;
+    height: 100%;
+    z-index: 5;
+    background: url(../image/11.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all .5s;
+    /* transform: scale(0.8, 0.8); */
+}
+
+.IMGS04 .img4 {
+    position: absolute;
+    top: 0;
+    left: 720px;
+    width: 270px;
+    height: 100%;
+    z-index: 6;
+    background: url(../image/12.jpg);
+    background-position: center;
+    background-size: cover;
+    /* transform: scale(0.9,0.9); */
+    transition: all .5s;
+}
+
+.IMGS04 .img5 {
+    position: absolute;
+    top: 0;
+    left: 960px;
+    width: 270px;
+    height: 100%;
+    z-index: 7;
+    background: url(../image/13.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all .5s;
+}
+
+/* .IMGS04 .active {
+    z-index: 9;
+    transform: scale(1.1,1.1);
+} */
+.IMGS04 [class^=img]:hover {
+    z-index: 9;
+    transform: scale(1.1, 1.1);
+}
+
+.IMGS04 [class^=img] h2 {
+    padding-top: 375px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.IMGS04 [class^=img] p {
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.IMGS04 [class^=img] {
+    border-radius: 5px;
+}
+
 .IMGS05 h1 {
     display: block;
     width: 310px;
@@ -422,7 +525,7 @@ h3 {
 }
 
 .IMGS05 .note5 img {
-
+    transition: all .5s;
     width: 100%;
 }
 
@@ -546,65 +649,160 @@ h3 {
     /* background-color: pink; */
 }
 
-.note7 .IMGS07 .img1 {
+
+.note7 .IMGS07 .pic1 {
     position: absolute;
+    /* position: relative; */
+    /* z-index: 999; */
     top: 0;
     left: 0;
     width: 425px;
-    height: 70px;
-    background: url(../image/19.jpg) no-repeat;
-    padding-top: 460px;
-    padding-left: 15px;
-
+    height: 530px;
+    background: green;
+    border-radius: 10px;
+    overflow: hidden;
+    /* padding-top: 460px; */
 }
 
-.note7 .IMGS07 .img2 {
+.note7 .IMGS07 .pic1 img {
     position: absolute;
     top: 0;
-    left: 450px;
-    width: 440px;
-    height: 40px;
-    background: url(../image/20.jpg) no-repeat;
-    padding-top: 215px;
-    padding-left: 15px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
 }
 
-.note7 .IMGS07 .img3 {
+.note7 .IMGS07 .pic1 .img1 {
+    position: absolute;
+    top: 470px;
+    left: 15px;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.note7 .IMGS07 [class^=pic]:hover img {
+    transform: scale(1.1, 1.1);
+}
+
+.note7 .IMGS07 .pic2 {
+    position: absolute;
+    top: 0;
+    left: 460px;
+    width: 440px;
+    height: 255px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.note7 .IMGS07 .pic2 img {
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    transition: all .5s;
+}
+
+.note7 .IMGS07 .pic2 .img2 {
+    z-index: 99;
+    position: absolute;
+    top: 210px;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+
+.note7 .IMGS07 .pic3 {
     position: absolute;
     top: 0;
     right: 0;
     width: 265px;
-    height: 50px;
-    background: url(../image/21.jpg) no-repeat;
-    padding-top: 205px;
-    padding-left: 15px;
+    height: 255px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.note7 .IMGS07 .img4 {
+.note7 .IMGS07 .pic3 img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.note7 .IMGS07 .pic3 .img3 {
+    position: absolute;
+    top: 214px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.note7 .IMGS07 .pic4 {
     position: absolute;
     bottom: 0;
-    left: 450px;
-
+    left: 460px;
     width: 265px;
-    height: 50px;
-    background: url(../image/22.jpg) no-repeat;
-    padding-top: 205px;
-    padding-left: 15px;
-
+    height: 255px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.note7 .IMGS07 .img5 {
+.note7 .IMGS07 .pic4 img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* width: 100%; */
+    height: 100%;
+    transition: all .5s;
+}
+
+.note7 .IMGS07 .pic4 .img4 {
+    position: absolute;
+    top: 195px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding-left: 15px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.note7 .IMGS07 .pic5 {
     position: absolute;
     bottom: 0;
     right: 0;
-
     width: 440px;
-    height: 40px;
-    background: url(../image/23.jpg) no-repeat;
-    padding-top: 215px;
+    height: 255px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.note7 .IMGS07 .pic5 img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.note7 .IMGS07 .pic5 .img5 {
+    position: absolute;
+    top: 200px;
+    left: 0;
     padding-left: 15px;
-
-
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .1);
 }
 
 .note7 .IMGS07 [class^=img] p {
@@ -613,16 +811,23 @@ h3 {
 
 .note7 .IMGS07 [class^=img] {
     color: #ffffff;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
+    /* border-radius: 10px; */
+    /* background-size: cover; */
+    /* background-position: center; */
     /* overflow: hidden; */
-
 }
 
 .note7 .IMGS07 [class^=img]:hover {
     background-size: 110%;
+}
 
+.note7 .IMGS07 .tip {
+    /* display: block; */
+    background-color: #3366ff;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 2px;
 }
 
 .note8 {
@@ -692,9 +897,24 @@ h3 {
 }
 
 .note10 .color div {
+    position: relative;
     height: 455px;
     margin-right: 15px;
     border-radius: 5px;
+}
+
+.note10 .color div .text {
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 5px;
+    height: 20px;
+    width: 40px;
+}
+
+.note10 .color div .see {
+    opacity: 1;
 }
 
 .note10 .color .green1 {
@@ -1050,6 +1270,7 @@ h3 {
 }
 
 .note13 .Bigbox .IMGS13 [class^=pic] {
+    position: relative;
     width: 100%;
     height: 220px;
     border-radius: 5px;
@@ -1057,52 +1278,23 @@ h3 {
     margin-bottom: 20px;
 }
 
-.note13 .Bigbox .IMGS13 .pic1 {
-    background: url(../image/38.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+.note13 .Bigbox .IMGS13 [class^=pic] img {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    transition: all .5s;
 }
 
-.note13 .Bigbox .IMGS13 .pic2 {
-    background: url(../image/39.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+.note13 .Bigbox .IMGS13 .pic4 img {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.note13 .Bigbox .IMGS13 .pic3 {
-    background: url(../image/40.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note13 .Bigbox .IMGS13 .pic4 {
-    background: url(../image/41.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note13 .Bigbox .IMGS13 .pic5 {
-    background: url(../image/42.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note13 .Bigbox .IMGS13 .pic6 {
-    background: url(../image/43.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note13 .Bigbox .IMGS13 .pic7 {
-    background: url(../image/44.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note13 .Bigbox .IMGS13 .pic8 {
-    background: url(../image/45.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+.note13 .Bigbox .IMGS13 [class^=pic]:hover img {
+    transform: scale(1.1, 1.1);
 }
 
 .note13 .IMGS13 .img::after {
@@ -1120,14 +1312,11 @@ h3 {
     font-size: 12px;
 }
 
-.note13 .Bigbox .IMGS13 [class^=pic]:hover {
-    background-size: 110%;
-}
 
 .note14 h1 {
     display: block;
     width: 455px;
-    margin: 50px auto;
+    margin: 20px auto;
     font-size: 30px;
     font-weight: 400;
     text-align: center;
@@ -1164,69 +1353,130 @@ h3 {
     background-size: 120%;
 }
 
-.note14 .IMGS14 .img1:hover,
-.note14 .IMGS14 .img2:hover {
-    background-size: 150%;
-}
 
-.note14 .IMGS14 .img1 {
+.note14 .IMGS14 .pic1 {
     position: absolute;
     top: 0;
     left: 0;
     width: 465px;
-    height: 60px;
-    background: url(../image/46.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 460px;
-    padding-left: 15px;
-
+    height: 520px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-.note14 .IMGS14 .img2 {
+.note14 .IMGS14 .pic1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* transform: translateX(-50px); */
+    margin-left: -50px;
+    transition: all .5s;
+}
+
+.note14 .IMGS14 .pic1 .img1 {
+    position: absolute;
+    top: 470px;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, .1);
+    padding-left: 15px;
+}
+
+.note14 .IMGS14 .pic2 {
     position: absolute;
     top: 0;
     left: 495px;
     width: 260px;
-    height: 60px;
-    background: url(../image/47.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 460px;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.note14 .IMGS14 .pic2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* transform: translateX(-40px); */
+    margin-left: -40px;
+    transition: all .5s;
+}
+
+.note14 .IMGS14 .pic2 .img2 {
+    position: absolute;
+    top: 470px;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, .1);
     padding-left: 15px;
 }
 
-.note14 .IMGS14 .img3 {
+.note14 .IMGS14 .pic3 {
     position: absolute;
     top: 0;
     right: 0;
     width: 400px;
-    height: 55px;
-    background: url(../image/48.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 200px;
+    height: 255px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.note14 .IMGS14 .pic3 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* height: 100%; */
+    width: 100%;
+    transition: all .5s;
+}
+
+.note14 .IMGS14 .pic3 .img3 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, .1);
     padding-left: 15px;
 }
 
-.note14 .IMGS14 .img4 {
+.note14 .IMGS14 .pic4 {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 400px;
-    height: 55px;
-    background: url(../image/49.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 200px;
-    padding-left: 15px;
+    height: 255px;
+    overflow: hidden;
+    border-radius: 10px;
 
 }
 
+.note14 .IMGS14 .pic4 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* height: 100%; */
+    width: 100%;
+    transition: all .5s;
+}
 
+.note14 .IMGS14 .pic4 .img4 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .1);
+    padding-left: 15px;
+}
 
-
-
+.note14 .IMGS14 [class^=pic]:hover img {
+    transform: scale(1.1, 1.1);
+}
 
 .note15 .IMGS15 {
     position: relative;
@@ -1308,12 +1558,28 @@ h3 {
 }
 
 .note17 .IMGS17 .img [class^=pic] {
-
+    position: relative;
     width: 100%;
     height: 165px;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+.note17 .IMGS17 .img [class^=pic] img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all .5s;
+}
+
+.note17 .IMGS17 .img [class^=pic]:hover img {
+    transform: scale(1.1, 1.1);
+}
+
+.note17 .IMGS17 .img .pic4 img {
+    height: 100%;
 }
 
 .note17 .IMGS17 .img::after {
@@ -1324,30 +1590,6 @@ h3 {
     content: '';
     font-family: 'icomoon';
     color: #333333;
-}
-
-.note17 .IMGS17 .img .pic1 {
-    background: url(../image/51.jpg) no-repeat;
-    background-size: cover;
-    /* background-position: center; */
-}
-
-.note17 .IMGS17 .img .pic2 {
-    background: url(../image/52.jpg) no-repeat;
-    background-size: cover;
-    /* background-position: center; */
-}
-
-.note17 .IMGS17 .img .pic3 {
-    background: url(../image/53.jpg) no-repeat;
-    background-size: cover;
-    background-position: 0 -70px;
-}
-
-.note17 .IMGS17 .img .pic4 {
-    background: url(../image/54.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .note17 .IMGS17 .img [class^=pic]:hover {
@@ -1600,83 +1842,24 @@ h3 {
     margin-right: 10px;
     background-color: #666666;
     border-radius: 5px;
+    overflow: hidden;
 }
 
-.note27 .Bigbox .IMGS27 [class^=img]:hover {
-    background-size: 130%;
+.note27 .Bigbox .IMGS27 [class^=img] img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: all .5s;
 }
 
-.note27 .Bigbox .IMGS27 .img3:hover,
-.note27 .Bigbox .IMGS27 .img4:hover {
-    background-size: 110%;
+.note27 .Bigbox .IMGS27 .img4 img,
+.note27 .Bigbox .IMGS27 .img3 img {
+    width: 100%;
 }
 
-.note27 .Bigbox .IMGS27 .img2:hover {
-    background-size: 170%;
-}
-
-.note27 .Bigbox .IMGS27 .img10 {
-    margin-right: 0;
-}
-
-.note27 .Bigbox .IMGS27 .img1 {
-    background: url(../image/74.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note27 .Bigbox .IMGS27 .img2 {
-    background: url(../image/75.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note27 .Bigbox .IMGS27 .img3 {
-    background: url(../image/76.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note27 .Bigbox .IMGS27 .img4 {
-    background: url(../image/77.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note27 .Bigbox .IMGS27 .img5 {
-    background: url(../image/79.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note27 .Bigbox .IMGS27 .img6 {
-    background: url(../image/79.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note27 .Bigbox .IMGS27 .img7 {
-    background: url(../image/79.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note27 .Bigbox .IMGS27 .img8 {
-    background: url(../image/79.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note27 .Bigbox .IMGS27 .img9 {
-    background: url(../image/79.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.note27 .Bigbox .IMGS27 .img10 {
-    background: url(../image/79.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+.note27 .Bigbox .IMGS27 [class^=img]:hover img {
+    transform: scale(1.1, 1.1);
 }
 
 .note27 .Bigbox .IMGS27 [class^=img]::before {
@@ -1688,6 +1871,7 @@ h3 {
     border-radius: 50%;
     background-color: rgba(0, 0, 0, .4);
     position: absolute;
+    z-index: 99;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1736,6 +1920,7 @@ h3 {
 
 .IMGS28 img {
     height: 100%;
+    transition: all .5s;
 }
 
 .IMGS28 [class^=img]:hover img {
@@ -1822,19 +2007,14 @@ h3 {
     /* background-color: pink; */
 }
 
-.note20 .IMGS20 [class^=img] {
-    border-radius: 5px;
-    color: #ffffff;
-}
-
 .note20 .IMGS20 [class^=img] p {
     color: #ffffff;
     text-align: left;
     font-size: 12px;
 }
 
-.note20 .IMGS20 [class^=img]:hover {
-    background-size: 120%;
+.note20 .IMGS20 [class^=pic]:hover img {
+    transform: scale(1.1, 1.1);
 }
 
 /* .note14 .IMGS14 .img1:hover,
@@ -1842,42 +2022,271 @@ h3 {
     background-size: 150%;
 } */
 
-.note20 .IMGS20 .img1 {
+.note20 .IMGS20 .pic1 {
     position: absolute;
     top: 0;
     left: 0;
     width: 450px;
-    height: 55px;
-    background: url(../image/64.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 200px;
-    padding-left: 15px;
-
+    height: 255px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.note20 .IMGS20 .img2 {
+.note20 .IMGS20 .pic1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all .5s;
+}
+
+.note20 .IMGS20 .pic1 .img1 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    padding-left: 15px;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.note20 .IMGS20 .pic2 {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 450px;
-    height: 55px;
-    background: url(../image/65.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 200px;
-    padding-left: 15px;
+    height: 255px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.note20 .IMGS20 .img3 {
+.note20 .IMGS20 .pic2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all .5s;
+}
+
+.note20 .IMGS20 .pic2 .img2 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    padding-left: 15px;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.note20 .IMGS20 .pic3 {
     position: absolute;
     top: 0;
     right: 0;
     width: 700px;
-    height: 50px;
-    background: url(../image/66.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 470px;
+    height: 525px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.note20 .IMGS20 .pic3 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: all .5s;
+    margin-left: -90px;
+}
+
+.note20 .IMGS20 .pic3 .img3 {
+    position: absolute;
+    top: 470px;
+    left: 0;
     padding-left: 15px;
+    width: 100%;
+    height: 55px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.note29 {
+    width: 1200px;
+    height: 520px;
+    margin: 30px auto;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.note29 div {
+    position: relative;
+    width: 10%;
+    float: left;
+    transition: all 1s;
+}
+
+.note29 img {
+    width: 960px;
+    cursor: pointer;
+}
+
+.note29:hover div {
+    width: 5%;
+}
+
+.note29 div:hover {
+    width: 55%;
+}
+.note29 h1 {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+.note29 p {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.IMGS30 {
+    margin: 20px auto;
+    width: 1200px;
+    height: 520px;
+    background: linear-gradient(-45deg, #dae, #f66, #3c9, #09f, #66f);
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 12%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0 12%;
+    }
+}
+.IMGS30 {
+    text-align: center;
+}
+
+.IMGS30 h1 {
+    margin-top: 100px;
+    font-size: 60px;
+    color: #ccffff;
+}
+
+/* 图库3 链接 */
+.IMGS30 a {
+    display: block;
+    width: 136px;
+    height: 35px;
+    background-color: #3399ff;
+    color: #ffffff;
+    border-radius: 3px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 0px;
+    margin: 0 auto;
+}
+
+/* 图片外边框 */
+.IMGS30 .yuan {
+    position: relative;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    /* background-color: pink; */
+}
+
+/* 图片中边框 */
+.IMGS30 .yuan .middle1 {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    width: 170px;
+    height: 170px;
+    /* border: 30px solid #ffffff; */
+    border-radius: 50% 50% 50% 50%;
+    overflow: hidden;
+    background: url(../image/67.jpg) no-repeat;
+    background-size: 170px 170px;
+    transition: all .4s;
+    background-position: center;
+}
+
+.IMGS30 .yuan .middle2 {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 170px;
+    height: 170px;
+    /* border: 30px solid #ffffff; */
+    border-radius: 50% 50% 50% 50%;
+    overflow: hidden;
+    background: url(../image/68.jpg) no-repeat;
+    background-size: 170px 170px;
+    background-position: center;
+
+}
+
+.IMGS30 .yuan .middle3 {
+    position: absolute;
+    top: 50px;
+    left: 540px;
+    width: 170px;
+    height: 170px;
+    /* border: 30px solid #ffffff; */
+    border-radius: 50% 50% 50% 50%;
+    overflow: hidden;
+    background: url(../image/69.jpg) no-repeat;
+    background-size: 170px 170px;
+    transition: all .4s;
+    background-position: center;
+}
+
+.IMGS30 .yuan .middle4 {
+    position: absolute;
+    top: 100px;
+    left: 750px;
+    width: 170px;
+    height: 170px;
+    /* border: 30px solid #ffffff; */
+    border-radius: 50% 50% 50% 50%;
+    overflow: hidden;
+    background: url(../image/70.jpg) no-repeat;
+    background-size: 170px 170px;
+    transition: all .4s;
+    background-position: center;
+}
+.IMGS30 .yuan .middle5 {
+    position: absolute;
+    top: 50px;
+    left: 970px;
+    width: 170px;
+    height: 170px;
+    /* border: 30px solid #ffffff; */
+    border-radius: 50% 50% 50% 50%;
+    overflow: hidden;
+    background: url(../image/71.jpg) no-repeat;
+    background-size: 170px 170px;
+    transition: all .4s;
+    background-position: center;
+}
+
+.IMGS30 .yuan [class^=middle] {
+    transition: all .5s;
+}
+
+.IMGS30 .yuan [class^=middle]:hover {
+    transform: scale(1.1, 1.1);
 }

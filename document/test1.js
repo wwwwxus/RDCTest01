@@ -14,7 +14,7 @@ tip.addEventListener('click', function () {
 //右侧蓝条移动
 const rightnav = document.querySelectorAll('.nav_right li')
 // console.log(rightnav)
-for (let i = 0; i < rightnav.length; i++) {
+for (let i = 0; i < rightnav.length - 1; i++) {
     rightnav[i].addEventListener('click', function (e) {
         // console.log(11)
         e.preventDefault()
@@ -28,19 +28,26 @@ for (let i = 0; i < rightnav.length; i++) {
 }
 
 // 颜色条变化
-const color = document.querySelectorAll('.note10 .color div')
+const color = document.querySelectorAll('.note10 .color .n')
+const text = document.querySelectorAll(".note10 .color .n .text")
+// console.log(color)
 for (let i = 0; i < color.length; i++) {
     color[i].addEventListener('mouseenter', function (e) {
         //排他思想
         if (e.target.tagName === 'DIV') {
-
+            document.querySelector('.color .n .see').classList.remove('see')
             document.querySelector('.color .active').classList.remove('active')
-
             color[i].classList.add('active')
-
+            // console.log(color[i])
+            // color[i].children[0].classList.add('see')
+            // console.log(color[i].children[0])
+            text[i].classList.add('see')
+            // console.log(color[i].children[0])
         }
     })
 }
+// const text = document.querySelectorAll(".note10 .color div div")
+// console.log(text)
 
 //轮播图效果
 const note13right = document.querySelector('.note13 .tip1')

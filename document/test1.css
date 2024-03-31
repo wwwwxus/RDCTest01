@@ -155,6 +155,7 @@ h3 {
     padding-top: 186px;
     background: rgba(0, 0, 0, .3);
     color: aliceblue;
+    transition: all .5s;
 }
 
 .mask h3 {
@@ -194,15 +195,15 @@ h3 {
 .nav .nav_bigbox {
     display: none;
     position: absolute;
+    z-index: 99999;
     top: 45px;
     left: 0;
-    z-index: 999;
     width: 200px;
-    height: 10000px;
+    height: 800px;
     background-color: #ffffff;
     border-top: 3px solid rgba(0, 0, 0, .2);
     padding-left: 15px;
-    /* overflow:scroll; */
+    overflow: auto;
 }
 
 .nav_bigbox li {
@@ -243,24 +244,22 @@ h3 {
 
 /* 图库2 图片框 */
 .IMGS02 .note2 {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    color: #ffffff;
     background: url(../image/05.jpg) no-repeat;
     background-size: cover;
-    width: 1900px;
-    height: 1200px;
-    margin: 0 auto;
     background-position: center;
-    color: #ffffff;
-
 }
 
 /* 图库2 内部文本 */
 .IMGS02 .note2 .info {
-    padding-top: 1030px;
+    padding-top: 650px;
     padding-left: 20px;
 }
 
 .IMGS02 .note2 .info h1 {
-
     font-weight: 400;
     font-size: 35px;
 }
@@ -277,10 +276,10 @@ h3 {
     background-color: #3399ff;
     color: #ffffff;
     border-radius: 3px;
-    overflow: hidden;
     line-height: 35px;
     text-align: center;
     margin-top: 22px;
+    overflow: hidden;
 }
 
 /* 图库3 文字居中 */
@@ -353,6 +352,7 @@ h3 {
     background-position: center;
 }
 
+/* 大外边 */
 .IMGS03 .yuan .big1 {
     position: relative;
     border: 17px solid #ffcccc;
@@ -373,14 +373,14 @@ h3 {
 
 .IMGS03 .yuan [class^=big] a {
     position: absolute;
+    display: block;
     bottom: -20px;
     left: 105px;
-    display: block;
+    height: 35px;
+    width: 50px;
     font-size: 12px;
     background-color: #663399;
     color: #ffffff;
-    height: 35px;
-    width: 50px;
     border-radius: 15px;
 }
 
@@ -482,10 +482,6 @@ h3 {
     transition: all .5s;
 }
 
-/* .IMGS04 .active {
-    z-index: 9;
-    transform: scale(1.1,1.1);
-} */
 .IMGS04 [class^=img]:hover {
     z-index: 9;
     transform: scale(1.1, 1.1);
@@ -539,7 +535,7 @@ h3 {
 }
 
 .IMGS05 .pick a {
-    display: inline;
+    /* display: inline; */
     margin-right: 10px;
     border: #333333 2px solid;
     border-radius: 15px;
@@ -797,7 +793,7 @@ h3 {
 
 .note7 .IMGS07 .pic5 .img5 {
     position: absolute;
-    top: 200px;
+    top: 195px;
     left: 0;
     padding-left: 15px;
     width: 100%;
@@ -811,14 +807,6 @@ h3 {
 
 .note7 .IMGS07 [class^=img] {
     color: #ffffff;
-    /* border-radius: 10px; */
-    /* background-size: cover; */
-    /* background-position: center; */
-    /* overflow: hidden; */
-}
-
-.note7 .IMGS07 [class^=img]:hover {
-    background-size: 110%;
 }
 
 .note7 .IMGS07 .tip {
@@ -896,7 +884,7 @@ h3 {
     align-items: center;
 }
 
-.note10 .color div {
+.note10 .color .n {
     position: relative;
     height: 455px;
     margin-right: 15px;
@@ -904,7 +892,6 @@ h3 {
 }
 
 .note10 .color div .text {
-    /* display: none; */
     opacity: 0;
     position: absolute;
     bottom: 15px;
@@ -1206,6 +1193,7 @@ h3 {
     overflow: hidden;
 }
 
+/* 长条 */
 .note13 .Bigbox .IMGS13 {
     display: flex;
     height: 100%;
@@ -1226,11 +1214,6 @@ h3 {
 .note13 .Bigbox .IMGS13 .img8 {
     margin-right: 0;
 }
-
-
-/* .note13 .Bigbox .IMGS13:hover {
-    transform: translate(-1000px, 0px);
-} */
 
 .note13 .tip1 {
     position: absolute;
@@ -1520,7 +1503,6 @@ h3 {
 }
 
 .text16 a {
-
     display: inline;
     margin-top: 15px;
     margin-right: 10px;
@@ -1590,14 +1572,6 @@ h3 {
     content: '';
     font-family: 'icomoon';
     color: #333333;
-}
-
-.note17 .IMGS17 .img [class^=pic]:hover {
-    background-size: 110%;
-}
-
-.note17 .IMGS17 .img .pic4:hover {
-    background-size: 130%;
 }
 
 .note17 .IMGS17 .img p {
@@ -2017,11 +1991,6 @@ h3 {
     transform: scale(1.1, 1.1);
 }
 
-/* .note14 .IMGS14 .img1:hover,
-.note14 .IMGS14 .img2:hover {
-    background-size: 150%;
-} */
-
 .note20 .IMGS20 .pic1 {
     position: absolute;
     top: 0;
@@ -2137,12 +2106,14 @@ h3 {
 .note29 div:hover {
     width: 55%;
 }
+
 .note29 h1 {
     display: block;
     text-align: center;
     font-size: 30px;
     font-weight: 400;
 }
+
 .note29 p {
     display: block;
     text-align: center;
@@ -2156,11 +2127,14 @@ h3 {
     margin: 20px auto;
     width: 1200px;
     height: 520px;
+    /* 渐变色 */
     background: linear-gradient(-45deg, #dae, #f66, #3c9, #09f, #66f);
     background-size: 200% 200%;
+    /* 动画 */
     animation: gradient 8s ease infinite;
 }
 
+/* 改变背景位置 */
 @keyframes gradient {
     0% {
         background-position: 0 12%;
@@ -2174,6 +2148,7 @@ h3 {
         background-position: 0 12%;
     }
 }
+
 .IMGS30 {
     text-align: center;
 }
@@ -2268,6 +2243,7 @@ h3 {
     transition: all .4s;
     background-position: center;
 }
+
 .IMGS30 .yuan .middle5 {
     position: absolute;
     top: 50px;
